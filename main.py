@@ -6,7 +6,7 @@ def main():
     Функция возвращает информацию о статусе получения данных из json-файла по ссылке (operations_url),
     выводит 5 последних (count_last_values) успешных (EXECUTED) транзакций
     """
-    operations_url = "https://file.notion.so/f/s/d22c7143-d55e-4f1d-aa98-e9b15e5e5efc/operations.json?spaceId=0771f0bb-b4cb-4a14-bc05-94cbd33fc70d&table=block&id=f11058ed-10ad-42ea-a13d-aad1945e5421&expirationTimestamp=1677856139653&signature=kAxhXa_UIHexLM3Rzan2zmshO9mpP0cSDxU0ziRMJq4&downloadName=operations.json"
+    operations_url = "https://api.npoint.io/b4be3cfb294b7cd84ff9"
     count_last_values = 5
     filtered_empty_from = True
 
