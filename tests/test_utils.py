@@ -5,15 +5,15 @@ def test_get_data():
     """
     Функция тестирует функцию get_data
     """
-    url = "https://file.notion.so/f/s/d22c7143-d55e-4f1d-aa98-e9b15e5e5efc/operations.json?spaceId=0771f0bb-b4cb-4a14-bc05-94cbd33fc70d&table=block&id=f11058ed-10ad-42ea-a13d-aad1945e5421&expirationTimestamp=1677856139653&signature=kAxhXa_UIHexLM3Rzan2zmshO9mpP0cSDxU0ziRMJq4&downloadName=operations.json"
+    url = "https://api.npoint.io/b4be3cfb294b7cd84ff9"
     assert get_data(url) is not None
 
-    url = "https://file.notion.so/f/s/d22c7143-d55e-4f1d-aa98-e9b15e5e5efc/operations.json?spaceId=0771f0bb-b4cb-4a14-bc05-94cbd33fc70d&table=block&id=f11058ed-10ad-42ea-a13d-aad1945e5421&expirationTimestamp=1677856139653&signature=kAxhXa_UIHexLM3Rzan2zmshO9mpP0cSDxU0ziRMJq4&downloadNam=operations.json"
+    url = "https://api.npoint.io/b4be3cfb294b7cd84ff"
     data, info = get_data(url)
     assert data is None
     assert info == "warning: Статус ответа 400"
 
-    url = "https://fil.notion.so/f/s/d22c7143-d55e-4f1d-aa98-e9b15e5e5efc/operations.json?spaceId=0771f0bb-b4cb-4a14-bc05-94cbd33fc70d&table=block&id=f11058ed-10ad-42ea-a13d-aad1945e5421&expirationTimestamp=1677856139653&signature=kAxhXa_UIHexLM3Rzan2zmshO9mpP0cSDxU0ziRMJq4&downloadNam=operations.json"
+    url = "https://api.point.io/b4be3cfb294b7cd84ff9"
     data, info = get_data(url)
     assert data is None
     assert info == "error: requests.exceptions.ConnectionError"
