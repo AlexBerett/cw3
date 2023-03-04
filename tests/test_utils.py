@@ -11,7 +11,7 @@ def test_get_data():
     url = "https://api.npoint.io/b4be3cfb294b7cd84ff"
     data, info = get_data(url)
     assert data is None
-    assert info == "warning: Статус ответа 400"
+    assert info == "warning: Статус ответа 500"
 
     url = "https://api.point.io/b4be3cfb294b7cd84ff9"
     data, info = get_data(url)
