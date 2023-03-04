@@ -19,6 +19,7 @@ def main():
     data = get_filtered_data(data, filtered_empty_from)
     data = get_last_data(data, count_last_values)
     data = get_formatted_data(data)
+    # Печать элементов подготовленного списка дата через цикл по элеиентам этого списка
     for row in data:
         print(row)
 
